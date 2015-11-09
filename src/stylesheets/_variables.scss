@@ -1,0 +1,40 @@
+// Colors
+
+$color-green: green;
+$color-blue: blue;
+$color-red: red;
+$color-orange: orange
+$color-beige: beige;
+$color-pink: pink;
+$color-white: white;
+$color-grey: grey;
+$color-light-grey: lighten(grey, 10);
+$color-black: black;
+
+$background-color: $color-black;
+$text-color: $color-grey;
+$text-color-on-dark: #1E1E1E;
+$link-color: $color-pink;
+
+// Typography
+
+$base-font: 'Merriweather', serif;
+$base-size: 17;
+$leading: 27;
+
+$lineheight: ($leading / $base-size) * 1rem;
+
+$serif:     'Playfair Display', Georgia, serif;
+$sans:      'Roboto', Helvetica, sans-serif;
+$mono:      Menlo, monospace;
+$headings:  $serif, serif;
+
+// Measures
+
+$page-width:        90%;
+$max-width:         40rem;
+
+$desktop:           1700px;
+$laptop:            1280px;
+$tablet:            768px;
+$handheld:          481px;
