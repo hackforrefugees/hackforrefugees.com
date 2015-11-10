@@ -6,6 +6,7 @@
 
   [role="banner"] {
     align-items: center;
+    text-align: center;
     background-image: url('/images/splash.jpg');
     background-size: cover;
     display: flex;
@@ -17,7 +18,7 @@
     h1, h2 {
       color: $color-orange;
       max-width: 40rem;
-      text-align: left;
+      text-align: center;
     }
 
     h1 {
@@ -83,15 +84,11 @@
     .buttons {
       display: flex;
       flex-direction: row;
-      align-items: left;
-      text-align: left;
-      justify-content: start;
+      justify-content: center;
       margin-left: 1rem;
     }
 
     @include tablet {
-      align-items: center;
-      text-align: center;
       padding: $lineheight 5%;
 
       h1 {
