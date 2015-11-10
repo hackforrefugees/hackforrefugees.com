@@ -1,0 +1,76 @@
+
+
+.btn:not(:first-child){
+  margin-left: 1em;
+}
+
+.btn {
+  -webkit-appearance: none;
+  display: inline-block;
+  vertical-align: bottom;
+
+  font-weight: 500;
+  font-size: (1.5em/1.2);
+
+  color: $color-blue;
+  text-align: center;
+  text-decoration: none;
+
+  padding: .5em 1.2em .4em;
+  border: 1px solid $color-white;
+  border-radius: 10px;
+  background: $color-white;
+
+  transition: 100ms;
+
+  &[disabled] {
+    opacity: 0.8;
+    pointer-events: none;
+    cursor: cross;
+  }
+
+  &:hover {
+    transform: scale(1.05);
+    color: $color-white;
+    background: $color-orange;
+    border-color: $color-orange;
+    text-decoration: none;
+  }
+
+  &:active {
+    transform: scale(0.95);
+    background: darken($color-orange, 10);
+    border-color: darken($color-orange, 10);
+    color: $color-white;
+    text-decoration: none;
+  }
+
+  &.btn--large {
+    font-size: 1.2em;
+    padding: .5em 1.3em;
+  }
+
+  &.btn--huge {
+    font-size: 1.5em;
+    padding: .7em 1.4em;
+  }
+
+  &.btn--outlined {
+    background: transparent;
+    color: $color-white;
+
+    &:hover {
+      background: $color-orange;
+      color: $color-white;
+    }
+  }
+
+  @include tablet {
+    padding: 0.5rem 0.4rem !important;
+
+  }
+
+  @include handheld {
+    padding: 0.75rem 0.5rem !important;
+  }
+}

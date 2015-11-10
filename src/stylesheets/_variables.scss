@@ -1,9 +1,10 @@
 // Colors
 
 $color-green: green;
-$color-blue: blue;
+$color-blue: #4569ff;
 $color-red: red;
-$color-orange: orange
+$color-orange: #ff6e40;
+$color-yellow: #f7c201;
 $color-beige: beige;
 $color-pink: pink;
 $color-white: white;
@@ -11,23 +12,22 @@ $color-grey: grey;
 $color-light-grey: lighten(grey, 10);
 $color-black: black;
 
-$background-color: $color-black;
-$text-color: $color-grey;
+$background-color: $color-white;
+
+$text-color: $color-black;
+
 $text-color-on-dark: #1E1E1E;
-$link-color: $color-pink;
-
+$link-color: lighten($color-orange, 10);
 // Typography
-
-$base-font: 'Merriweather', serif;
+$base-font: 'bariol_regularregular', serif;
 $base-size: 17;
 $leading: 27;
 
 $lineheight: ($leading / $base-size) * 1rem;
 
-$serif:     'Playfair Display', Georgia, serif;
-$sans:      'Roboto', Helvetica, sans-serif;
+$serif:     Georgia, serif;
 $mono:      Menlo, monospace;
-$headings:  $serif, serif;
+$headings:  'Pacifico', serif;
 
 // Measures
 

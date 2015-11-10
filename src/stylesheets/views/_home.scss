@@ -1,0 +1,226 @@
+@import "_properties";
+@import "_fading-entrances/fading-entrances.scss";
+
+.home {
+  text-align: center;
+
+  [role="banner"] {
+    align-items: center;
+    background-image: url('/images/splash.jpg');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    min-height: 50rem;
+    padding: $lineheight 2%;
+    z-index: 3;
+
+    h1, h2 {
+      color: $color-orange;
+      max-width: 40rem;
+      text-align: left;
+    }
+
+    h1 {
+      font-size: 4.5rem;
+      line-height: 1.1;
+      margin: 10rem 0 $lineheight / 2;
+      position: relative;
+
+      &:after {
+        color: $color-white;
+        content: 'Gothenburg';
+        font-family: "bariol_regularregular";
+        font-size: 1rem;
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+    }
+
+    h2 {
+      font-family: "bariol_regularregular";
+      font-size: 1.5rem;
+      font-weight: 400;
+      letter-spacing: 1px;
+      line-height: 1.8rem;
+      margin-left: 1rem;
+    }
+
+    .date-banner {
+      margin-left: 1rem;
+      margin-top: 1.5rem;
+      font-size: 1.2rem;
+      font-family: "bariol_regularregular";
+      color: white;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      position: relative;
+
+      &:before {
+        content:'';
+        position: absolute;
+        left:0;
+        line-height: 1.2rem;
+        top: 0.8rem;
+        height: 1px;
+        width: 25%;
+        background-color: white;
+      }
+
+
+      &:after {
+        content:'';
+        position: absolute;
+        right:0;
+        line-height: 1.2rem;
+        top: 0.8rem;
+        height: 1px;
+        width: 25%;
+        background-color: white;
+      }
+    }
+
+    .buttons {
+      display: flex;
+      flex-direction: row;
+      align-items: left;
+      text-align: left;
+      justify-content: start;
+      margin-left: 1rem;
+    }
+
+    @include tablet {
+      align-items: center;
+      text-align: center;
+      padding: $lineheight 5%;
+
+      h1 {
+        margin: 10rem 0 $lineheight / 2;
+        font-size: 3em;
+        line-height: 1.2;
+        text-align: center;
+      }
+
+      h2 {
+        text-align: center;
+        font-size: 1rem;
+      }
+      .buttons {
+        justify-content: space-around;
+      }
+    }
+
+    @include handheld {
+      h1 {
+        margin: 5rem 0 $lineheight / 2;
+      }
+
+    }
+  }
+
+
+  [role="main"] {
+    font-size: to_rem(19);
+    background-color: white;
+    position: relative;
+
+    section {
+      position: relative;
+    }
+
+  }
+
+  .motivation {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding: $lineheight*4 2%;
+    z-index: 3;
+
+    &__text {
+      &__header {
+        color: $color-blue;
+      }
+      color: $color-grey;
+      display: flex;
+      flex-flow: column wrap;
+    }
+
+    &.seen {
+      article {
+        @include fadeInUp(
+          $duration: 750ms,
+          $function: ease,
+          $fill: both
+        );
+      }
+    }
+  }
+
+  .cases {
+    background-color: $color-orange;
+    color: white;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding: $lineheight*4 15%;
+    z-index: 3;
+
+    &__text {
+      &__header {
+        color: $color-white;
+      }
+      color: $color-white;
+      display: flex;
+      flex-flow: column wrap;
+    }
+
+    ul {
+      @include list-reset;
+
+      display: flex;
+      flex: 100%;
+      flex-flow: row wrap;
+      align-items: stretch;
+
+      li {
+        min-width: 33.3%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: $lineheight*2 10%;
+        color: white;
+        font-size: 1.3rem;
+
+        figure {
+          margin-bottom: (1.5882352941rem/8);
+          img {
+            height: 75px;
+          }
+        }
+
+      }
+    }
+  }
+
+  .location {
+    background-color: $color-blue;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: stretch;
+    padding: $lineheight*4 10%;
+    z-index: 3;
+
+    &__text {
+      flex: 1;
+      &__header {
+        color: $color-white;
+      }
+
+      color: $color-white;
+      display: flex;
+      flex-flow: column wrap;
+    }
+  }
+}
