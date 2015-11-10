@@ -21,7 +21,7 @@
       <section>
         <h1>Hack for Refugees</h1>
         <h3 class="date-banner">5 - 6 December 2015</h3>
-        <h2>Nobody can do everything, <br>but everybody can do something.</h2><span class="buttons"><a href="https://pierrereimertz.typeform.com/to/Eb6XW5" target="_blank" class="btn">Apply for the hack!</a><a href="https://pierrereimertz.typeform.com/to/iJ6o1a" target="_blank" class="btn btn--outlined">Suggest a project</a></span>
+        <h2>Nobody can do everything, <br>but everybody can do something.</h2><span class="buttons"><a href="#hack" class="btn">The hack</a><a href="/suggest" target="_blank" class="btn btn--outlined">Suggest a project</a></span>
       </section>
     </header>
     <main role="main">
@@ -61,25 +61,25 @@
         </ul>
         <footer>
           <h1>More ideas?</h1>
-          <p>Do you have an idea for another case that we have missed? Please help us out!</p><span class="buttons"><a href="https://pierrereimertz.typeform.com/to/iJ6o1a" target="_blank" class="btn btn--outlined">Suggest a case</a></span>
+          <p>Do you have an idea for another case that we have missed? Please help us out!</p><span class="buttons"><a href="/suggest" target="_blank" class="btn btn--outlined">Suggest a case</a></span>
         </footer>
       </section>
-      <section class="location">
-        <article class="location__text">
-          <h1 class="location__text__header">The hack</h1>
+      <section id="hack" class="hack">
+        <article class="hack__text">
+          <h1 class="hack__text__header">The hack</h1>
           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
           <p>
-            <h2 class="location__text__header">Location</h2><span><a href="https://goo.gl/maps/JLHmvfAhHDE2" target="_blank">Burt - Vallgatan 27, Gothenburg</a></span>
-          </p><span class="buttons"><a href="https://pierrereimertz.typeform.com/to/Eb6XW5" target="_blank" class="btn btn--outlined">Apply for the hack!</a></span>
-          <div id="google-maps"></div>
+            <h2 class="hack__text__header">Location</h2><span><a href="https://goo.gl/maps/JLHmvfAhHDE2" target="_blank">Burt - Vallgatan 27, Gothenburg</a></span>
+          </p><span class="buttons"><a href="/register" target="_blank" class="btn btn--outlined">RSVP for the hack!</a></span>
         </article>
+        <div id="google-maps"></div>
       </section>
       <section class="sponsors"></section>
       <section class="speakers"></section>
       <section class="organisers"></section>
     </main>
-    <script src="/bower_components/zepto/zepto.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=&amp;sensor=false&amp;extension=.js"></script>
-    <script src="/scripts/google-maps.js"></script>
+    <script src="/scripts/vendor.js"></script>
+    
+    <script src="/scripts/main.js"></script>
   </body>
 </html>

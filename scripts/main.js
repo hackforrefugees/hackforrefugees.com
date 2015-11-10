@@ -1,3 +1,15 @@
+Array.prototype.slice.call(document.querySelectorAll('main > section')).map(function(section){
+  new Waypoint({
+    element: section,
+    handler: function(direction) {
+      this.element.classList.add('seen');
+      this.destroy();
+    },
+    offset: '40%'
+  })
+});
+
+
 google.maps.event.addDomListener(window, 'load', init);
 
 var map;
