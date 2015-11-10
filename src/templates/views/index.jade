@@ -10,8 +10,8 @@ block content
       h2 Nobody can do everything, <br>but everybody can do something.
 
       span.buttons
-        a.btn(href='https://pierrereimertz.typeform.com/to/Eb6XW5' target="_blank") Apply for the hack!
-        a.btn.btn--outlined(href='https://pierrereimertz.typeform.com/to/iJ6o1a' target="_blank") Suggest a project
+        a.btn(href='#hack') The hack
+        a.btn.btn--outlined(href='/suggest' target="_blank") Suggest a project
 
   main(role="main")
     section.motivation
@@ -20,7 +20,7 @@ block content
         p.
           Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 
-    section.cases
+    section#cases.cases
       header.cases__text
         h1.cases__text__header Inspirational Cases
         p.
@@ -56,25 +56,23 @@ block content
         p Do you have an idea for another case that we have missed? Please help us out!
 
         span.buttons
-          a.btn.btn--outlined(href='https://pierrereimertz.typeform.com/to/iJ6o1a' target="_blank") Suggest a case
+          a.btn.btn--outlined(href='/suggest' target="_blank") Suggest a case
 
-    section.location
-      article.location__text
-        h1.location__text__header The hack
+    section#hack.hack
+      article.hack__text
+        h1.hack__text__header The hack
         p.
           Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
         p
-          h2.location__text__header Location
+          h2.hack__text__header Location
           span
             a(href="https://goo.gl/maps/JLHmvfAhHDE2" target="_blank") Burt - Vallgatan 27, Gothenburg
 
 
         span.buttons
-          a.btn.btn--outlined(href='https://pierrereimertz.typeform.com/to/Eb6XW5' target="_blank") Apply for the hack!
-        div(id="google-maps")
+          a.btn.btn--outlined(href='/register' target="_blank") RSVP for the hack!
+      div(id="google-maps")
 
     section.sponsors
-
     section.speakers
-
     section.organisers

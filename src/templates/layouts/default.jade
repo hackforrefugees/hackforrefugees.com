@@ -20,17 +20,15 @@ html
     block content
 
     // build:js /scripts/vendor.js
-    script(src='/bower_components/zepto/zepto.min.js')
-    script(src='https://maps.googleapis.com/maps/api/js?key=&sensor=false&extension=.js')
     // bower:js
+    script(src='/bower_components/zepto/zepto.min.js')
+    script(src='/bower_components/waypoints/lib/noframework.waypoints.min.js')
+    script(src='https://maps.googleapis.com/maps/api/js?key=&sensor=false&extension=.js')
     // endbower
-
     // endbuild
 
-    // build:js /scripts/main.js
+
     script(src='/scripts/main.js')
 
-    script(src='/scripts/google-maps.js')
-    // endbuild
 
 

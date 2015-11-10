@@ -99,6 +99,10 @@
         font-size: 3em;
         line-height: 1.2;
         text-align: center;
+        &:after {
+          top: -20px;
+          left: 0;
+        }
       }
 
       h2 {
@@ -108,13 +112,39 @@
       .buttons {
         justify-content: space-around;
       }
+
+      .date-banner {
+        &:before {
+          width: 10%;
+        }
+
+
+        &:after {
+          width: 10%;
+        }
+      }
     }
 
     @include handheld {
       h1 {
         margin: 5rem 0 $lineheight / 2;
       }
+    }
 
+    @include fadeIn(
+      $duration: 750ms,
+      $delay: 750ms,
+      $function: ease,
+      $fill: both
+    );
+
+    h1, h2, .btn, .date-banner {
+      @include fadeIn(
+        $duration: 500ms,
+        $delay: 1500ms,
+        $function: ease,
+        $fill: both
+      );
     }
   }
 
@@ -146,14 +176,20 @@
       flex-flow: column wrap;
     }
 
-    &.seen {
-      article {
-        @include fadeInUp(
-          $duration: 750ms,
-          $function: ease,
-          $fill: both
-        );
-      }
+    & > * {
+      opacity: 0;
+    }
+
+    & > * {
+      opacity: 0;
+    }
+
+    &.seen  > * {
+      @include fadeInUp(
+        $duration: 750ms,
+        $function: ease,
+        $fill: both
+      );
     }
   }
 
@@ -179,15 +215,13 @@
       @include list-reset;
 
       display: flex;
-      flex: 100%;
+      justify-content: center;
       flex-flow: row wrap;
-      align-items: stretch;
+      align-items: center;
 
       li {
-        min-width: 33.3%;
-        display: flex;
+        min-width: 300px;
         flex-direction: column;
-        align-items: center;
         justify-content: center;
         padding: $lineheight*2 10%;
         color: white;
@@ -202,9 +236,21 @@
 
       }
     }
+
+    & > * {
+      opacity: 0;
+    }
+
+    &.seen  > * {
+      @include fadeInUp(
+        $duration: 750ms,
+        $function: ease,
+        $fill: both
+      );
+    }
   }
 
-  .location {
+  .hack {
     background-color: $color-blue;
     display: flex;
     flex-flow: row wrap;
@@ -221,6 +267,17 @@
       color: $color-white;
       display: flex;
       flex-flow: column wrap;
+    }
+    & > article {
+      opacity: 0;
+    }
+    &.seen  > article {
+
+      @include fadeInUp(
+        $duration: 750ms,
+        $function: ease,
+        $fill: both
+      );
     }
   }
 }
