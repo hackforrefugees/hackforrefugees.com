@@ -32,7 +32,12 @@ nav ul {
 
 a {
   color: $link-color;
+  font-weight: bold;
   text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 p {
