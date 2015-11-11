@@ -29,6 +29,8 @@
     cursor: cross;
   }
 
+
+
   &:hover {
     transform: scale(1.05);
     color: $color-white;
@@ -63,6 +65,13 @@
       background: $color-orange;
       color: $color-white;
     }
+  }
+
+  &.btn--orange {
+    color: $color-white;
+    background: $color-orange;
+    border-color: $color-orange;
+    text-decoration: none;
   }
 
   @include tablet {
