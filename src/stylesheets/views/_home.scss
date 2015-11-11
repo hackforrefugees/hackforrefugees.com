@@ -279,15 +279,9 @@
   }
 
   .faq {
-    &__text {
-      &__header {
-        font-family: bariol_regularregular;
-      }
-      font-family: bariol_regularregular;
-    }
-
     //HAAAAAACK
     h2 {
+      font-family: bariol_regularregular;
       margin-bottom:0;
     }
     p {
@@ -303,6 +297,15 @@
     align-items: stretch;
     padding: $lineheight*2 10%;
     z-index: 3;
+
+    //midnight stress push
+    h2 {
+      margin-bottom:0;
+    }
+
+    p {
+      margin-top: 0;
+    }
 
     &__text {
       flex: 1;
