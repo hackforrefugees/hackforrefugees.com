@@ -278,25 +278,23 @@
     }
   }
 
-  // .faq {
-  //   background-color: $color-white;
-  //   display: flex;
-  //   flex-flow: row wrap;
-  //   align-items: stretch;
-  //   padding: $lineheight*2 10%;
-  //   z-index: 3;
+  .faq {
+    &__text {
+      &__header {
+        font-family: bariol_regularregular;
+      }
+      font-family: bariol_regularregular;
+    }
 
-  //   &__text {
-  //     flex: 1;
-  //     &__header {
-  //       color: $color-white;
-  //     }
-
-  //     color: $color-black;
-  //     display: flex;
-  //     flex-flow: column wrap;
-  //   }
-  // }
+    //HAAAAAACK
+    h2 {
+      margin-bottom:0;
+    }
+    p {
+      margin-top: 0;
+      margin-bottom: 3rem;
+    }
+  }
 
   .contact {
     background-color: $color-orange;
