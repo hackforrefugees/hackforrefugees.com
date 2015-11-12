@@ -74,6 +74,19 @@
     text-decoration: none;
   }
 
+  &.btn--white {
+    color: $color-orange;
+    background: $color-white;
+    border-color: $color-white;
+    text-decoration: none;
+
+    &:hover {
+      background: $color-white;
+      border-color: $color-white;
+      color: $color-orange;
+    }
+  }
+
   @include tablet {
     padding: 0.5rem 0.7rem !important;
     font-size: 1.1rem;
