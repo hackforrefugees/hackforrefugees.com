@@ -29,13 +29,8 @@
     cursor: cross;
   }
 
-
-
   &:hover {
     transform: scale(1.05);
-    color: $color-white;
-    background: $color-orange;
-    border-color: $color-orange;
     text-decoration: none;
   }
 
@@ -57,35 +52,31 @@
     padding: .7em 1.4em;
   }
 
-  &.btn--outlined {
-    background: transparent;
-    color: $color-white;
-
-    &:hover {
-      background: $color-orange;
-      color: $color-white;
-    }
-  }
-
   &.btn--orange {
     color: $color-white;
     background: $color-orange;
     border-color: $color-orange;
-    text-decoration: none;
+
+    &.btn--outlined {
+      color: $color-orange;
+      border-color: $color-orange;
+    }
   }
 
   &.btn--white {
-    color: $color-orange;
     background: $color-white;
     border-color: $color-white;
     text-decoration: none;
 
-    &:hover {
-      background: $color-white;
-      border-color: $color-white;
-      color: $color-orange;
+    &.btn--outlined {
+      color: $color-white;
     }
   }
+
+  &.btn--outlined {
+    background: transparent;
+  }
+
 
   @include tablet {
     padding: 0.5rem 0.7rem !important;
