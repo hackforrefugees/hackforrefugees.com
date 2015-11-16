@@ -235,10 +235,10 @@
     }
 
     & > * {
-      opacity: 0;
+      //opacity: 0;
     }
 
-    &.seen  > * {
+    &.seen > * {
       @include fadeInUp(
         $duration: 750ms,
         $function: ease,
