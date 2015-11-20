@@ -196,7 +196,7 @@
     display: flex;
     flex-flow: column;
     align-items: center;
-    padding: $lineheight*2 10%;
+    padding: $lineheight*2 5%;
     z-index: 3;
 
     &__text {
@@ -215,7 +215,7 @@
       justify-content: center;
       flex-flow: row wrap;
       align-items: flex-start;
-      padding: $lineheight*2 5%;
+      padding: $lineheight*2 0%;
 
       li {
         flex: 1;
