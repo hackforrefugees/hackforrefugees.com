@@ -196,7 +196,7 @@
     display: flex;
     flex-flow: column;
     align-items: center;
-    padding: $lineheight*2 15%;
+    padding: $lineheight*2 10%;
     z-index: 3;
 
     &__text {
@@ -214,13 +214,14 @@
       display: flex;
       justify-content: center;
       flex-flow: row wrap;
-      align-items: center;
+      align-items: flex-start;
+      padding: $lineheight*2 5%;
 
       li {
+        flex: 1;
         min-width: 290px;
         flex-direction: column;
         justify-content: center;
-        padding: $lineheight*2 10%;
         color: white;
         font-size: 1.3rem;
 
