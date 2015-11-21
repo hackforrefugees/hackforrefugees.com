@@ -218,9 +218,8 @@
       align-items: flex-start;
 
       li {
-        flex-basis: auto; /* default value */
-        flex-grow: 1;
-        min-width: 345px;
+        flex: 1;
+        min-width: 33%;
         flex-direction: column;
         justify-content: center;
         color: white;
@@ -242,6 +241,13 @@
           margin-top: 0;
         }
 
+        @include tablet {
+          min-width: 50%;
+        }
+
+        @include handheld {
+          min-width: 100%;
+        }
       }
     }
 
