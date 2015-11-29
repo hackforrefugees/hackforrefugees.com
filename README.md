@@ -1,4 +1,4 @@
-# hackforrefugees.com 1337
+# hackforrefugees.com 1
 
 ## Install
 ```bash
