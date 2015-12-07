@@ -6,182 +6,64 @@ block content
   header(role='banner')
     section
       h1 Hack for Refugees
-      h3.date-banner 5 - 6 December 2015
       h2 Nobody can do everything, <br>but everybody can do something.
 
       span.buttons
-        a.btn(href='#hack') Want to attend?
-        a.btn.btn--outlined.btn--white(href='/suggest' target="_blank") Suggest a project
+        a.btn.btn--orange(href='#cases') Want to contribute?
+        a.btn.btn--blue(href='#organize') Want to organize a hack?
+        a.btn(href='http://hackforrefugees.github.io/showcase') Current Projects
 
   main(role="main")
     section.motivation
       article.motivation__text
-        h1.motivation__text__header Hello, good to see you here!
+        h1.motivation__text__header Ideas, Hack, Release.
         p.
           Currently there are several millions of people that have been forced to flee from their home countries and become refugees. Sweden is one of the countries that take in most refugees per capita, this year 140-150 thousand refugees are expected to arrive in Sweden. This is a huge increase from previous years, causing major challenges for the organisations trying to help the refugees. Several of these challenges can be solved with IT.
 
     section#cases.cases
       article.cases__text
-        h1.cases__text__header Proposed Ideas
+        h1.cases__text__header Want to help out? That's awesome!
         p.
-          We have a list of proposed ideas that organisations and individuals have handed to us, see some examples below or check them all out #[a(class="color-white" href='https://docs.google.com/document/d/1toLS0xmy4wLRhNSdT47fN1lp6tIaDE_Z1Pz550KirR4/edit' target='_blank') here].
-        ul
-          li
-            figure
-              img.heart(src="/images/icons/heart.svg")
-            h2 Reunite
-            p A site dedicated to refugees who accidentally got away from friends or family during their escape, providing them help to find their loved ones again.
-          li
-            figure
-              img(src="/images/icons/beer.svg")
-            h2 Refugee Event
-            p A web application where people who arrange activities for refugees can add their events, as well as a place where refugees can get information about upcoming events.
-          li
-            figure
-              img(src="/images/icons/smile.svg")
-            h2 Blending Matching
-            p A platform providing possibilities to match families (refugee families with swedish families) that wants to do fun stuff together.
+          We just finished our first Hackaton and have dozen of projects that need contributers. Since we believe in open-source-based projects, everything is stored on github.
 
-          li
-            figure
-              img(src="/images/icons/phone.svg")
-            h2 Refugee Phones Support System
-            p A web application to support Refugee Phones in their awesome work of delivering phones to the ones who needs it the most. The application could for example support logging of the in- and outflow of phones, donations from companies or individuals, as well as functionality for ordering phones for refugees.
-          li
-            figure
-              img(src="/images/icons/talk.svg")
-            h2 400contacts Instant Messaging
-            p A platform for connecting refugees with local professionals and let mentors and and adepts communicate easily though instant messaging. This as a way to help refugees with engineering background get their first skilled job in Sweden.
-
-          li
-            figure
-              img(src="/images/icons/hands.svg")
-            h2 Scheduling Volunteers
-            p An app for scheduling volunteers at refugee homes and a place where volunteers can register that they’re willing to help. Security is a recurring problem at refugee homes, so this registration needs to have some kind of strong authentication, preferable bank-id or something similar.
-
-
-      footer.cases__text
-        h1.cases__text__header More ideas?
-        p Do you have any ideas for challenges you think should be addressed at the hack? Or would you like to help out? If so, please let us know!
+        p Click on the link below the see all the available projects.
 
         span.buttons
-          a.btn.btn--outlined.btn--white(href='/suggest' target="_blank") Suggest a case
-          span.buttons
-          a.btn.btn--white(href='/contact' target="_blank") Help out :)
+          a.btn.btn--white(href='http://hackforrefugees.github.io/showcase') Projects
 
-    section#hack.hack
-      article.hack__text
-        h1.hack__text__header The hack
+    section#organize.organize
+      article.organize__text
+        h1.organize__text__header Be an Organizer!
         p.
-          On the 5-6 of December we are organizing Hack for Refugees, where we will gather a large group of programmers, designers and other tech people. Together we will try to build as many tools as possible that could be helpful for both the refugees and the volunteers.
+          We organized a hack on the 5-6 of December in Gothenburg, where we gathered a large group of programmers, designers and other tech people. Together they built many tools that can be helpful for both the refugees and the volunteers.
         p.
-          Our goal is to increase the awareness of the problems the refugees face and find new ways for people to help.
-
-        h
-        p
-          b.
-            Oh boy, that was quick!
-          span.
-            We've already filled all available spots! All registrars
-            from now on will be put on a waiting list, and if a spot is available, we'll let you know.
+          There is a lot of smart people out there that want to contribute in some way, and a hackaton is a very efficient way
+          of connecting these people.
+        p.
+          If you are interested in organizing a Hack for Refugees hackaton in your town, please let us know and we'll help you
+          as much as we can.
 
         span.buttons
           br
-          a.btn.btn--orange(href='/register' target="_blank") Sign up for the waiting list
-
-        p
-          h2.hack__text__header Location
-          span
-            a(href="https://goo.gl/maps/JLHmvfAhHDE2" target="_blank") Burt - Vallgatan 27, Gothenburg
+          a.btn.btn--orange(href='/organizer') Sign up as an organizer
 
       div(id="google-maps")
 
-    section.faq
-      article.faq__text
-        h1.faq__text__header Frequently asked Questions
-        h2.faq__text__header When can we start hacking?
-        p.
-          Whenever you want! If you want to get going right away, just send us a message  and tell us what you want to work on so we can make sure no teams build the same solution. But the actual hack starts at Burt on Saturday the 5th of December at 09:00. You can keep hacking there until 16:50 on Sunday the 6th, when you’ll get to show off what you’ve done!
+    //- section.faq
+    //-   article.faq__text
+    //-     h1.faq__text__header Frequently asked Questions
 
-        h2.faq__text__header Will there be food?
-        p.
-          Hell’s yeah. Breakfast, lunch and dinner on Saturday, and breakfast and lunch on Sunday!
-
-        h2.faq__text__header I don’t know what to hack on!
-        p.
-          Don’t worry! Just bring a towel and have a look at the cases section.
-
-        h2.faq__text__header We want to hack as a team, is that possible?
-
-        p.
-          It is! Either have the teammates enter the same team name when registering, or just show up and sit next to each other on hack day :)
-        h2.faq__text__header Will there be prizes?
-        p.
-          Karma. Loads. And possibly something more tangible as well.
+    //-     h2.faq__text__header
+    //-     p.
     //- section.sponsors
     //- section.speakers
     //- section.organisers
-    section#sponsors.sponsors
-      article.sponsors__text
-        h1.sponsors__text__header Partners
-        ul
-          li
-            figure
-              a(href="http://burt.io/")
-                img(src="/images/sponsors/burt_logo_positive.png")
-          li
-            figure
-              a(href="http://www.interaktionsbyran.se/")
-                img(src="/images/sponsors/interaktionsbyran-logo.png")
-          li
-            figure
-              a(href="http://www.safersociety.com/")
-                img(src="/images/sponsors/logo-safer-society-group-cmyk.png")
-          li
-            figure
-              a(href="https://www.recordedfuture.com/")
-                img(src="/images/sponsors/RecordedFutureBlack.png")
-        ul.three
-          li
-            figure
-              a(href="http://www.yaki-da.se/")
-                img(src="/images/sponsors/yaki-da.png")
-          li
-            figure
-              a(href="http://www.redbull.com/")
-                img(src="/images/sponsors/Red_Bull.svg")
-          li
-            figure
-              a(href="http://www.bergstrands.se/")
-                img(src="/images/sponsors/bergstrands_kafferosteri.png")
-          li
-            figure
-              a(href="http://www.mooncoffee.se/")
-                img(src="/images/sponsors/moon_svart.png")
-
-
-          li
-            figure
-              a(href="http://www.wakalstreetfood.se/")
-                img(src="/images/sponsors/wakal-trans.png")
-          li
-            figure
-              a(href="http://falcon.se/")
-                img(src="/images/sponsors/RAW_LOGO-01.png")
-          li
-            figure
-              a(href="http://www.llamalloyd.se/")
-                img(src="/images/sponsors/llamaENDASTlama.png")
-
-          li
-            figure
-              a(href="http://www.oatly.com/")
-                img(src="/images/sponsors/Oatly_logga.png")
+    //- section#sponsors.sponsors
 
 
     section.contact
       article.contact__text
         h1.contact__text__header Contact
         p.
-          This event is all about doing things together, if you have any ideas or would like to help out, we would love hear from you. Just send us an email at
+          If you have any ideas or would like to help out, we would love hear from you. Just send us an email at
           #[a(class="color-white" href='mailto:hello@hackforrefugees.com') hello@hackforrefugees.com]

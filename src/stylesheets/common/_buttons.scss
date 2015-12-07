@@ -52,6 +52,18 @@
     padding: .7em 1.4em;
   }
 
+    &.btn--blue {
+    color: $color-white;
+    background: $color-blue;
+    border-color: $color-blue;
+
+    &.btn--outlined {
+      color: $color-blue;
+      border-color: $color-blue;
+    }
+  }
+
+
   &.btn--orange {
     color: $color-white;
     background: $color-orange;
