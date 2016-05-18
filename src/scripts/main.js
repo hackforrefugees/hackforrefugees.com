@@ -16,7 +16,7 @@ var map;
 
 function init() {
     var mapOptions = {
-        center: new google.maps.LatLng(57.703638, 11.9642925),
+        center: new google.maps.LatLng(35.666878,139.7473143),
         zoom: 15,
         zoomControl: false,
         disableDoubleClickZoom: false,
@@ -39,7 +39,7 @@ function init() {
 
     marker = new google.maps.Marker({
         icon: 'https://mapbuildr.com/assets/img/markers/ellipse-black.png',
-        position: new google.maps.LatLng(57.703638, 11.9642925),
+        position: new google.maps.LatLng(35.666878,139.7473143),
         map: map,
         text: 'Location of hack'
     });
