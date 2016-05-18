@@ -25,12 +25,13 @@
       font-size: 4.5rem;
       line-height: 1.1;
       margin: 10rem 0 $lineheight / 2;
+      font-family: "PT Sans Caption";
       position: relative;
 
       &:after {
         color: $color-white;
-        content: 'Gothenburg';
-        font-family: "bariol_regularregular";
+        content: 'Tokyo';
+        font-family: "Roboto";
         font-size: 1rem;
         position: absolute;
         right: 0;
@@ -39,7 +40,7 @@
     }
 
     h2 {
-      font-family: "bariol_regularregular";
+      font-family: "Roboto";
       font-size: 1.5rem;
       font-weight: 400;
       letter-spacing: 1px;
@@ -51,7 +52,7 @@
       margin-left: 1rem;
       margin-top: 1.5rem;
       font-size: 1.2rem;
-      font-family: "bariol_regularregular";
+      font-family: "Roboto";
       color: white;
       text-transform: uppercase;
       letter-spacing: 2px;
@@ -136,6 +137,7 @@
     );
 
     h1, h2, .btn, .date-banner {
+      font-family: "PT Sans Caption";
       @include fadeIn(
         $duration: 500ms,
         $delay: 1500ms,
@@ -261,8 +263,8 @@
 
 
   .sponsors {
-    background-color: $color-white;
-    color: $color-black;
+    background-color: $color-black;
+    color: $color-white;
     display: flex;
     flex-flow: column;
     align-items: center;
@@ -271,9 +273,9 @@
 
     &__text {
       &__header {
-        color: $color-black;
+        color: $color-white;
       }
-      color: $color-black;
+      color: $color-white;
       display: flex;
       flex-flow: column wrap;
     }
@@ -295,7 +297,7 @@
           padding: 10px;
           margin-bottom: (1.5882352941rem/8);
           img {
-            max-width: 400px;
+            max-width: 200px;
             width: 100%;
           }
         }
@@ -393,7 +395,7 @@
   .faq {
     //HAAAAAACK
     h2 {
-      font-family: bariol_regularregular;
+      font-family: Roboto;
       margin-bottom:0;
     }
     p {
